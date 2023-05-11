@@ -1,5 +1,21 @@
 
-#Implement a directed graph using adjacency lists.
+class Node:
+    def __init__(self, nodeID: str, nodeName: str):
+        self.nodeID = nodeID
+        self.nodeName = nodeName
+
+    def getName(self):
+        return self.nodeName
+    
+    def getID(self):
+        return self.nodeID
+    
+    def __str__(self):
+        return f"Node ID: {self.nodeID}, Node Name: {self.nodeName}"
+
+    def __repr__(self):
+        return f"Node ID: {self.nodeID}, Node Name: {self.nodeName}"
+    
 class DirectedGraph:
     def __init__(self):
         self.graph = {}
